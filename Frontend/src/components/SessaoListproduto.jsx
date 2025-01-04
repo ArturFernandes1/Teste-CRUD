@@ -34,7 +34,7 @@ function SessaoListproduto() {
           {produtos.map((produto) => (
             <tr key={produto.id}>
               <td>{produto.name}</td>
-              <td>{produto.value}</td>
+              <td>R$ {parseFloat(produto.value).toFixed(2)}</td>
             </tr>
           ))}
         </tbody>

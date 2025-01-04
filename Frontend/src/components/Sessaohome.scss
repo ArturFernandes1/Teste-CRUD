@@ -1,3 +1,4 @@
+//Importante modelo de Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 * {
@@ -6,7 +7,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -15,12 +15,10 @@
     text-align: center;
     background-color: #fff;
 }
-
 .title-form {
     font-size: 25px;
     margin: 55px 0px 15px;
 }
-
 .estile-form{
     background: #fff;
     width: 100%;
@@ -30,7 +28,6 @@
     box-shadow: 1px 3px 7px 1px #333;
     border-radius: 6px;
 }
-
 .estile-form {
     display: flex;
     flex-wrap: wrap;

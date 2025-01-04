@@ -1,28 +1,33 @@
 .navbar {
+  &.background-nav{
+    background-color: #007bff;
+  }
+
+    
+
     .container-fluid {
       display: flex;
       justify-content: space-between;
   
       .navbar-collapse {
-        justify-content: flex-end; // Alinha os menus à direita
+        justify-content: flex-end;
         margin-right: 45px;
       }
   
       .navbar-nav {
         .nav-link {
-          color: #555; // Cor do link
+          color: rgb(192, 189, 189); 
           transition: color 0.3s;
   
           &:hover {
-            color: #007bff; // Cor ao passar o mouse
+            color: white;
+            transition: 1.4s; 
           }
 
         }
       }
     }
-  
- 
-  }
+ }
 
 
   

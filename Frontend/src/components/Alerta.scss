@@ -1,0 +1,14 @@
+.alerta {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    //background-color: #d6d6d6;
+    background-color: #dcdcdc; 
+    color: #28a745;
+    padding: 10px 20px;
+    border-bottom: 4px solid #28a745;
+    border-radius: 4px;
+    font-size: 16px;
+    z-index: 1000;
+  }
+  
