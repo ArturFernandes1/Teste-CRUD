@@ -1,5 +1,3 @@
-require('dotenv').config(); // Carrega as variáveis do arquivo .env
-
 const express = require('express');
 const cors = require('cors');
 const { Client } = require('pg');
@@ -10,28 +8,15 @@ const port = 5000;
 app.use(express.json());
 app.use(cors());
 
-// Configurar o cliente PostgreSQL usando a variável de ambiente
 const client = new Client({
-    connectionString: process.env.DATABASE_URL,
+    user: 'postgres',
+    host: 'localhost',
+    database: 'CadasProdutos',
+    password: 'Artur@2501f',
+    port: 5432,
 });
 
-client.connect()
-    .then(() => console.log('Connected to the database'))
-    .catch(err => console.error('Connection error', err.stack));
-
-app.get('/', async (req, res) => {
-    try {
-        const result = await client.query('SELECT * FROM your_table'); // Substitua 'your_table' pelo nome da sua tabela
-        res.status(200).json(result.rows);
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-});
-
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
-
+client.connect();
 
 // Rota POST para cadastrar um novo produto
 app.post('/api/products', async (req, res) => {
