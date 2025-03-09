@@ -59,7 +59,9 @@ Este projeto tem como objetivo a criação de um sistema simples de CRUD (Create
    ```bash
    cd backend
    depois node server.js
- 2.Navega até a pasta `frontend`:
+Se deu certo: vai visualizar a frase Servidor rodando `http://localhost:5000`. 
+### 2. Frontend (React.js)   
+ 2.Navegue até a pasta `frontend`:
  ```bash
    cd frontend
    npm run dev
